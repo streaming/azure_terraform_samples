@@ -9,16 +9,17 @@ The following samples currently exist:
 
 This example is used in situations where the Azure deployment needs to communicate with on-premise software via a Hybrid Relay.
 
-The following Azure solutions are installed:
+The following Azure solutions are installed:  
+
 * Resource Group
 * Application Insights
 * App Service (+Plan)
 * Sql Server
-  * Sql Server database
+    * Sql Server database
 * Key Vault
 * Storage Account
-  * Storage Container
-  * Blob Storage
+    * Storage Container
+    * Blob Storage
 * Hybrid Relay
 
 All resources follow a consistent naming scheme across your Octopus environments.
