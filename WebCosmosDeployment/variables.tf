@@ -40,27 +40,3 @@ variable "app_service_plan_pricing_tier" {
   type    = "string"
   default = "Free"   # Free | Basic | ...
 }
-
-# Sql Server username
-variable "sql_server_admin_username" {
-  type    = "string"
-  default = "mradministrator"
-}
-
-# Sql Server password
-variable "sql_server_admin_password" {
-  type    = "string"
-  default = "thisIsDog11"
-}
-
-# Key Vault tenant id -- The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault
-variable "keyvault_tenantid" {
-  type    = "string"
-  default = "#{AzureTenantId}"
-}
-
-# Key Vault object id -- The object ID of a user, service principal or security group in the Azure Active Directory tenant for the vault
-variable "keyvault_objectid" {
-  type    = "string"
-  default = "#{AzureTenantId}"
-}
