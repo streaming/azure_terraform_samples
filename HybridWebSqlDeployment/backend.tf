@@ -3,7 +3,7 @@ terraform {
   backend "azurerm" {
     storage_account_name = "#{AzureStorageAccountName}"
     container_name       = "#{AzureStorageContainerName}"
-    key                  = "terraform.#{Environment}.#{Octopus.Project.Name}.tfstate"
+    key                  = "#{AzureResourceGroup}.#{AzureResourceGroupDescriptor}.terraform.#{Environment}.tfstate"
     access_key           = "#{AzureAccessKey}"
   }
 }
