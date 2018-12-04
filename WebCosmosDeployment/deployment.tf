@@ -48,9 +48,9 @@ resource "azurerm_cosmosdb_account" "default" {
     consistency_level = "Session"
   }
 
-  failover_policy {
+  geo_location {
     location = "Australia Southeast"
-    priority = 0
+    failover_priority = 0
   }
 
   tags {
